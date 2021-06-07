@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0;}
+        li{list-style:none;}
+        a{text-decoration:none; color:#333; display:block;}
+
+       
+        .wrap{
+            background:url('img/img_8.jpg') center center /cover no-repeat;
+            width:375px;
+            margin:0 auto;
+            padding:75px 13px 0 ;
+        }
+        #form{
+            width:349px;
+            background-color:rgba(255,255,255,.8);
+            border:0;
+            margin:0 auto;
+            text-align: center;  
+            padding:0 12px;
+            box-sizing: border-box;
+        }
+        fieldset{
+            border:0;
+            text-align:center;
+        }
+        legend{
+            position:absolute;
+            left:-999999px;
+        }
+
+        #form h1{
+            margin-bottom:20px;
+        }
+        #form  a{
+            color:#13ABB2;
+        }
+        
+        label {
+            width:325px;
+            /* background-color: turquoise; */
+            
+            font-weight: bold;
+            display:block;
+            text-align:left;
+            margin-bottom:10px;
+            box-sizing: border-box;
+            
+           
+
+        }
+        
+        article input[type="text"] {
+            width:210px;
+            height:40px;
+            box-sizing: border-box;
+            margin-right:5px;
+            
+          
+           
+        }
+        article input[type="submit"] {
+           width:110px;
+           height:40px;
+           background-color:#13ABB2;
+           color:#fff;
+           font-size:16px ;
+           font-weight:bold;
+           border:0;  
+         }
+         article  input[type="text"],
+         input[type="submit"]::after{
+             content:'';
+             display:block;
+             clear:both;
+         }
+         article  input[type="text"],
+         input[type="submit"] {
+             float:left;
+             margin-bottom:15px;
+            
+         }
+         
+         
+         
+         input[type="password"]{
+             width:325px;
+             height:40px;
+             box-sizing:border-box;
+             margin-bottom:15px;
+         }
+         input[type="email"]{
+             width:325px;
+             height:40px;
+             box-sizing: border-box;
+             margin-bottom:15px;
+         }
+         .radio01 input[type="radio"]{
+             display:none;
+             position: absolute;
+             left:-9999999px;
+             
+         }
+         .radio01 input[type="radio"] +label {
+             float:left;
+             width:155px;
+             height:40px;
+             text-align: center;
+             border:1px solid #707070;
+             line-height:40px;
+             box-sizing: border-box;
+             margin-right:15px;
+             background-color: rgba(255,255,255,1);
+         }
+         .radio01 input[type="radio"] +label:last-child{
+             margin-right:0;
+         }
+         .name_in input[type="text"] {
+            width:325px;
+            height:40px;
+            margin-bottom:15px;
+            box-sizing: border-box;
+        }
+         
+        .box01 select{
+            width:125px;
+            height:40px;
+            border:1px solid #707070;
+        }
+        .box02 select{
+            width:90px;
+            height:40px;
+            border:1px solid #707070;
+        }
+        .box03 select{
+            width:90px;
+            height:40px;
+            border:1px solid #707070;
+        }
+        .box::after{
+            display:block;
+            content:'';
+            clear:both;
+        }
+        .box div{
+            float: left;
+            margin-right:10px;
+            margin-bottom:15px;
+            
+        }
+        .box div:last-child{
+            margin-right:0;
+        }
+        
+        .number select{
+            width:60px;
+            height:40px;
+        }
+        .number input[type="text"]  {
+            width:255px;
+            height:40px;
+            box-sizing: border-box;
+            
+        }
+        .number select {
+            margin-right: 10px;
+        }
+        .number::after {
+            content:'';
+            display:block;
+            clear:both;
+        }
+        .number select,input[type="text"] {
+            float: left;
+            margin-bottom:6px;
+        }
+        .number2 input[type="text"]{
+            width:205px;   
+            height: 40px; 
+            box-sizing: border-box;
+        }
+        .number2 input[type="submit"] {
+            width:110px;
+            height:40px;
+            background-color:#13ABB2 ;
+            color:#fff;
+            font-weight: bold;
+            font-size: 16px;
+            border:0;
+           
+        }
+        .number2 input[type="text"],
+        .number2 input[type="submit"] {
+            float: left;
+            margin-right: 10px;
+        }
+        .number2 input[type="submit"]:last-child{
+            margin-right: 0;
+        }
+       
+        
+        
+        
+        
+    </style>
+  
+
+</head>
+<body>
+    <div class="wrap">
+    <div id="form">
+        <form action="" method="post">
+            <a href="#"><h1>SUMMER</h1></a>
+            <fieldset>
+                <legend>회원가입</legend>
+                <div class="wrap_in">
+                    <label for="id">아이디</label>
+                    <article>
+                    <input type="text" id="id" placeholder="아이디" required autofocus>      
+                    <input type="submit" id="id"  value="중복확인">
+                    </article>
+                </div>  
+                <div>
+                    <label for="pw">비밀번호</label>
+                    <input type="password" id="pw" placeholder="비밀번호" required>
+                    <label for="pw">비밀번호 확인</label>
+                    <input type="password" id="pw" placeholder="비밀번호 확인" required>
+                </div>
+
+                <div>
+                    <label for="mail">이메일</label>
+                    <input type="email" id="mail" placeholder="이메일" required>
+                </div><!--이메일 -->
+
+                <div class="radio01">     
+                    <label>내국인/외국인</label>
+                    <input type="radio" id="ra" name="gender" value="내국인">
+                    <label for="ra">내국인</label>
+                    <input type="radio" id="re" name="gender" value="외국인">
+                    <label for="ra01">외국인</label>
+                
+                </div><!-- 내국인/외국인 -->
+
+                <div class="name_in"> 
+                    <label for="name">이름</label>
+                    <input type="text" id="name" placeholder="이름(실명입력)" required>
+                </div><!-- 이름 -->
+                <div class="box">
+                    <label>생년월일</label>
+                    <div class="box01">
+                    <select>
+                        <option>1995</option>
+                        <option>1996</option>
+                        <option>1997</option>
+                        <option>1998</option>
+                        <option>1999</option>
+                        <option>2000</option>
+                    </select>
+                    </div>  
+                    <div class="box02"> 
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                    </div>
+                    <div class="box03">
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                    </select>
+                     </div>
+                </div><!-- 생년월일 -->
+
+                <div class="number">
+                    <label for="phone">휴대폰 번호</label>
+                    <select>
+                        <option>+82</option>
+                        <option>+86</option>
+                        <option>+44</option>
+                        <option>+1</option>
+                    </select>
+                    <input type="text" id="phone" placeholder="'-'구분없이 입력"> 
+                </div>
+                <div class="number2">
+                    <input type="text" id="phone" placeholder="인증번호 입력">
+                    <input type=submit id="phone" value="인증번호">
+                </div>
+                <div class="address01">
+                    <label>주소</label>
+                    <input type="text" name="addr" id="addr1" placeholder="주소">
+                    <input type="button" value="인증번호">
+                </div>
+                <div class="address02">
+                    <input type="text" name="addr" placeholder="상세주소">
+                </div>
+                <div class="radio02">
+                    <label>성별</label>
+                    <input type="radio" id="ra" value="남성">
+                    <label for="ra">남성</label>
+                    <input type="radio" id="ra" value="여성">
+                    <label for="ra">여성</label>
+                </div>
+                <div class="cont01">
+                    <input type="radio" id="ra" value="약관전제 동의">
+                    <label for="ra">약관전체 동의</label>
+                    <div class="cont01_in">
+                        <input type="radio" id="ra" value="약관전제 동의">
+                        <label for="ra">이용약관 동의</label>
+                        <input type="radio" id="ra" value="약관전제 동의">
+                        <label for="ra">개인정보 취급</label>
+                        <input type="radio" id="ra" value="약관전제 동의">
+                        <label for="ra">약관전체 동의</label>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+</body>
+</html> 

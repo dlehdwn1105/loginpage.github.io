@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인페이지</title>
+    <style>
+        *{margin:0; padding:0;}
+        li{list-style:none;}
+        a{text-decoration:none; color:#333; display:block;}
+        
+        fieldset{border:0;}
+        legend{
+            position:absolute;
+            left:-999999999px;
+        }
+        .wrap{
+            width:1920px;
+            height:1080px;
+            background:url('img/img_4.jpg') center center/ cover no-repeat;
+            position: relative;
+            
+        }
+    
+        .wrap .wrap_in{
+            background-color:rgba(255,255,255,0.7);
+            width:600px;
+            height:800px;   
+            margin:140px 660px;
+            padding:100px;
+            position:absolute;
+            top:0;
+            left:0;
+            box-sizing: border-box;
+            box-shadow:0px 0px 60px  rgba(0,0,0,.5);
+           
+         }
+         
+        .wrap_in h1{
+            font-size:45px;
+            text-align: center;
+            margin-bottom:30px;
+            
+        }
+        .wrap_in h1 a{
+            color:#13ABB2;
+        }
+        
+        label{
+            position:absolute;
+            left:-99999px;
+        }
+        input[type="text"],
+        input[type="password"]{
+            width:400px;
+            height:60px;
+            border-radius: 20px; 
+            border:1px solid #ccc;
+            margin-bottom:20px;
+            padding:0 20px;
+            box-sizing: border-box;
+            background-color:rgba(255,255,255,0.5);
+        }
+        input[type="text"]:focus ,
+        input[type="password"]:focus{
+           outline:0;
+        }
+        input[type="submit"]{
+            width:400px;
+            height:60px;
+            border-radius: 20px;
+            border:1px solid #ccc;
+            background-color:#13ABB2;
+            color:#fff;
+            font-size:20px;
+            font-weight:bold;
+            margin-bottom:20px;
+            
+        }
+        .button{
+            text-align: center;
+            margin-bottom:25px;
+        }
+        .button input[type="submit"]{
+            width:180px;
+            height:60px;
+            border-radius: 20px;
+            border:1px solid #ccc;
+            background-color:rgba(255,255,255,0.5);
+            font-size: 16px;
+            font-weight:bold;
+            color:#13ABB2;
+
+            
+        }
+        .button::after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+        .button .box01{
+            float:left;
+        }
+        .button .box02{
+            float:right;
+        }
+        .wrap_in p{
+            text-align: center;
+            font-size: 16px;
+            color:#13ABB2;
+            margin-bottom:15px;
+        }
+         .imgall{
+            text-align: center;
+         }     
+        .imgall  div{
+            margin-right:40px;
+            width:74px;
+            height:74px;
+            display: inline-block;
+            
+            
+        }
+        .imgall div:last-child{
+            margin:0; 
+        }
+        .imgall div img{
+            border-radius: 50%; 
+            width:100%;
+            }      
+
+    </style>           
+</head> 
+<body>
+    <div class="wrap">
+        <div class="wrap_in">
+            <form action="" methd="post">
+                <h1><a href="#">SUMMER</a></h1>
+                 <fieldset>
+                    <legend>summer 로그인페이지</legend>
+                    <div>
+                        <label for="id">아이디</label>
+                        <input type="text" id="id" placeholder="아이디입력" required>
+                    </div>
+                    <div>
+                        <label for="pass">비밀번호</label>
+                        <input type="password" id="pass" placeholder="비밀번호입력">
+                    </div>
+                    <div>
+                        <input type="submit" value="로그인">
+                    </div>
+                    <div class="button">
+                        <div class="box01">
+                        <input type="submit" value="아이디찾기">
+                        </div>
+                        <div class="box02">
+                        <input type="submit" value="비밀번호찾기">
+                         </div>
+                    </div>
+
+                    <p>or sign in with</p>
+                   
+                    <div class="imgall">
+                        <div>
+                            <a href="#"><img src="img/img_1.jpg" alt="img"/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="img/img_2.jpg" alt="img"/></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="img/img_3.jpg" alt="img"/></a>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+    </div>
+</body>
+</html> 
